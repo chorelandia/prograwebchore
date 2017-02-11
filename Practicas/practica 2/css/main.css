@@ -1,0 +1,165 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+body {
+    font: 16px/26px Helvetica;
+}
+.container {
+    width: 90%;
+    margin: 0 5%;
+}
+h1{
+font-family: 'Barrio', cursive;
+}
+h2{
+    text-shadow:5px 5px 5px #000000;
+}
+aside{
+-moz-box-shadow:10px 10px 5px #000000;
+-webkit-box-shadow:10px 10px 5px #000000;
+box-shadow:10px 10px 5px #000000;
+}
+/* ===================
+    color general del sitio web
+   =================== */
+.header-container {
+    border-bottom: 20px solid #e44d26;
+}
+.footer-container,
+.main aside {
+    border-top: 20px solid #e44d26;
+}
+.header-container,
+.footer-container,
+.main aside {
+    background: #f16529;
+}
+.title {
+    color: white;
+}
+/* ==============
+    menu: movil
+   ============== */
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: #e44d26;
+}
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+/* ==============
+    main movil
+   ============== */
+.main {
+    padding: 30px 0;
+}
+.main article h1 {
+    font-size: 2em;
+}
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 480px) {
+    /*  Esto se aplica a pantallas más anchas de 480 pixeles  */
+    h1{color:red;}
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+    nav li:first-child a {
+        margin-left: 0;
+    }
+    nav li:last-child a {
+        margin-right: 0;
+    }
+    nav ul li {
+        display: inline;
+    }
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+/*  Esto se aplica a pantallas más anchas de 768 pixeles  */
+/* ====================
+    efecto CSS3 
+   ==================== */
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+    .title {
+        float: left;
+    }
+    nav {
+        float: right;
+        width: 38%;
+    }
+    .main article {
+        float: left;
+        width: 57%;
+    }
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+@media only screen and (min-width: 1140px) {
+    /*  Esto se aplica a pantallas más anchas de 1140 pixeles  */
+    .container {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
