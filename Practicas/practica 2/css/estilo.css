@@ -8,6 +8,18 @@ body{
 	font: 16px helvetica;
 }
 
+h1{
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+h2{
+	font-family: 'Rock Salt', cursive;
+}
+
+h3{
+	font-family: 'Great Vibes', cursive;
+}
+
 hr{
 	display: block;
 	height: 1px;
@@ -29,6 +41,10 @@ margin: arriba-abajo, izquierd-aderecha;
 
 .header-container{
 	border-bottom: 20px solid #e44d26;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	writing-mode: lr-tb;
 }
 
 .footer-container, .main aside{
@@ -36,11 +52,13 @@ margin: arriba-abajo, izquierd-aderecha;
 }
 
 .header-container, .footer-container, .main aside{
+	text-shadow:5px 10px 7px #000000;
 	background: #f16529;
 }
 
 .title{
 	color: white;
+	text-shadow:5px 10px 7px #000000;
 }
 
 nav ul{
@@ -88,15 +106,23 @@ nav a:hover{
 .footer.container footer{
 	color: white;
 	padding: 20px 0;
+	background-color: rgba(215, 40, 40, 0.9);
+	background: rgba(215, 40, 40, 0.9);
+	color: rgba(215, 40, 40, 0.9);
 }
 
 .clearfix:before, .clearfix:after{
 	content: " ";
 	display: table;
-}
+
+
 
 @media only screen and (min-width: 480px){
-	h1{ color: red; }
+	h1{ 
+
+		color: red; 
+		
+	}
 
 
 	nav a{
