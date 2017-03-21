@@ -1,6 +1,6 @@
 $(document).ready(
 	function(){
-		console.log("hola desde jquery");
+		//console.log("hola desde jquery");
 		//alert("hola desde jquery")
 
 
@@ -27,7 +27,7 @@ $(document).ready(
 	
 				
 			
-				if (z!=cartas [0] &&z!=cartas [1] && z!=cartas [2] && z!=cartas [3] && z!=cartas [4] && z!=cartas [5] && z!=cartas [6] && z!=cartas [7] && z!=cartas [8] && z!=cartas [9]) {
+				if (z!=cartas [0] &&z!=cartas [1] && z!=cartas [2] && z!=cartas [3] && z!=cartas [4] && z!=cartas [5] && z!=cartas [6] && z!=cartas [7] && z!=cartas [8] && z!=cartas [9]) {//condicion para que no se repita el numero
 					
 					cartas.unshift(z);//agrega al inicio del arreglo
 					cartas.pop();//borra el  ultimo dato
@@ -182,12 +182,18 @@ $(document).ready(
 
 			if (frij1==1 && frij2==1 && frij3==1 && frij4==1 && frij5==1 && frij6==1 && frij7==1 && frij8==1 && frij9==1) {
         	
-           		alert("GANASTE");    		
+           		alert("GANASTE"); 
+           	//	$("#finaliza").click(function(){
+    		//		$("#funciones").finish();
+			//	});  		
 			}
 
 			if (c==11) {//en el lapso 11 hace conteo de todo
 
 				alert("PERDISTE!!");
+			//	$("#finaliza").click(function(){
+    		//		$("#funciones").finish();
+			//	}); 
 			
 
 			}
