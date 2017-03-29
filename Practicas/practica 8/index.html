@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,7 +24,7 @@
     
     <div class="container">
         <div class="row">
-          <div class="col-md-3"><!--1-->
+          <div class="col-md-3" id="cuadro1"><!--1 basic-->
             
             <form>
               <div class="form-group">
@@ -47,9 +48,9 @@
               <button type="submit" class="btn btn-default">Enviar</button>
             </form>
 
-          </div>
+          </div><!--1 basic-->
 
-          <div class="col-md-9"><!--2-->
+          <div class="col-md-9" id="cuadro2"><!--2 inline-->
             
             <form class="form-inline">
               <div class="form-group">
@@ -63,61 +64,175 @@
               <button type="submit" class="btn btn-default">enviar invitacion</button>
             </form>
 
-          </div>
+          </div><!--2 inline-->
 
-          <div class="col-md-3"><!--3-->
+          <div class="col-md-6" id="cuadro3"><!--3 horizontal-->
             
-            <h1>largooooo</h1>
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Correo</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">contraseña</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Recuerdame
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">Registrarse</button>
+                </div>
+              </div>
+            </form>
 
-          </div>
+          </div><!--3 horizontal-->
 
-          <div class="col-md-3"><!--4-->
+          <div class="col-md-3" id="cuadro4"><!--4 supported controls-->
             
-            <h1>largooooo</h1>
+            <select multiple class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
 
-          </div>
+          </div><!--4 supported controls-->
 
-          <div class="col-md-3"><!--5-->
+          <div class="col-md-4" id="cuadro5"><!--5 Static control-->
             
-            <h1>largooooo</h1>
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="sr-only">Correo</label>
+                <p class="form-control-static">micorreo@example.com</p>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword2" class="sr-only">contraseña</label>
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-default">Confirmar identidad</button>
+            </form>
 
-          </div>
+          </div><!--5 Static control-->
 
-          <div class="col-md-3"><!--6-->
+          <div class="col-md-3" id="cuadro6"><!--6 focus y deshabilitado y color en css-->
             
-            <h1>largooooo</h1>
+            <input class="form-control2" id="disabledInput" type="text" placeholder="entrada deshabilitada..." disabled>
 
-          </div>
+          </div><!--6 focus y deshabilitado-->
 
-          <div class="col-md-3"><!--7-->
+          <div class="col-md-4" id="cuadro7"><!--7 disable -->
             
-            <h1>largooooo</h1>
+            <form>
+              <fieldset disabled>
+                <div class="form-group">
+                  <label for="disabledTextInput">Entreda deshabilitada</label>
+                  <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                </div>
+                <div class="form-group">
+                  <label for="disabledSelect">menu seleccionable deshabilitado</label>
+                  <select id="disabledSelect" class="form-control">
+                    <option>seleccion deshabilitada</option>
+                  </select>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> No se puede seleccionar esto
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">enviar</button>
+              </fieldset>
+            </form>
 
-          </div>
+          </div><!--7 disable -->
 
-          <div class="col-md-3"><!--8-->
+          <div class="col-md-3" id="cuadro8"><!--8 solo lectura (es igual que el deshabilitado pero no aparece el signo de prohibido)-->
             
-            <h1>largooooo</h1>
+            <input class="form-control" type="text" placeholder="Solo lectura…" readonly>
 
-          </div>
+          </div><!--8 solo lectura-->
 
-          <div class="col-md-3"><!--9-->
+          <div class="col-md-4" id="cuadro9"><!--9 texto de ayuda-->
+            <h4>Entrada con texto de ayuda</h4>
+            <label class="sr-only" for="inputHelpBlock">Entrada con texto de ayuda </label>
+            <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+            ...
+            <span id="helpBlock" class="help-block">Un bloque de texto de ayuda que se rompe en una nueva línea y puede extenderse más allá de una línea.</span>
+
+          </div><!--9 texto de ayuda-->
             
-            <h1>largooooo</h1>
-
-          </div>
-
-          <div class="col-md-3"><!--10-->
+          <div class="col-md-5" id="cuadro11"><!--11 dimencionamiento-->
             
-            <h1>largooooo</h1>
+            <form class="form-horizontal">
+              <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label" for="formGroupInputLarge">label grande</label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text" id="formGroupInputLarge" placeholder="entrada Large">
+                </div>
+              </div>
+              
+              <div class="form-group form-group">
+                <label class="col-sm-2 control-label" for="formGroupInput">label default</label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text" id="formGroupInput" placeholder="entrada default">
+                </div>
+              </div>
+                
+              <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="formGroupInputSmall">label chico</label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="text" id="formGroupInputSmall" placeholder="entrada Small ">
+                </div>
+              </div>
+            </form>
 
-          </div>
+          </div><!--11 dimencionamiento-->
 
-          <div class="col-md-3"><!--11-->
+          <div class="col-md-4" id="cuadro10"><!--10 estados de validacion-->
             
-            <h1>largooooo</h1>
+            <div class="form-group has-success has-feedback">
+              <label class="control-label" for="inputSuccess2">Entrada con exito</label>
+              <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+              <span id="inputSuccess2Status" class="sr-only">(success)</span>
+            </div>
+            <div class="form-group has-warning has-feedback">
+              <label class="control-label" for="inputWarning2">entrada con advertencia</label>
+              <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+              <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+              <span id="inputWarning2Status" class="sr-only">(warning)</span>
+            </div>
+            <div class="form-group has-error has-feedback">
+              <label class="control-label" for="inputError2">Entrada con error</label>
+              <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+              <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+              <span id="inputError2Status" class="sr-only">(error)</span>
+            </div>
+            <div class="form-group has-success has-feedback">
+              <label class="control-label" for="inputGroupSuccess1">Grupo de etrada con exito</label>
+              <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+              </div>
+              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+              <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+            </div>
 
-          </div>
+          </div><!--10 estados de validacion-->
+
+          
 
 
          
